@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria della Nonna di Mario</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/public/img/favicon.png">
+
+    <script src="public/app.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <header id="janosSGifs">
+            <h1>Pizzeria della Nonna di Mario</h1>
+        </header>
+        <main id="mainContainer">
+            <div id="pizzaContainer">
+                <h2>Pizzák</h2>
+            </div>
+            <div id="orderContainer">
+                <div id="cart">
+                    <h2>Kosár</h2>
+                    <p>Még nem tettél semmit a kosárba!</p>
+                </div>
+                <div id="user">
+                    <h2>Személyes adataid</h2>
+                </div>    
+                <div id="orderButton">
+                    <button type="submit" id="orderBtn">Megrendelem!</button>
+                </div>
+            </div>
+        </main>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Köszönjük a megrendelést!</h2>
+              </div>
+              <div class="modal-body">
+                <p>A pizzád készül, és hamarosan úton lesz Hozzád!</p>
+              </div>
+              <div class="modal-footer">
+                <img src="public/img/dancing_pizza.gif" alt="">
+              </div>
+            </div>
+          
+        </div>
+
+        <div id="picModal" class="picModal">
+            <!-- Modal content -->
+            <div class="picModal-content">
+                <span class="close" id="pizzaClose">&times;</span>
+                <img src="" alt="" id="pizzaBigImg">
+            </div>
+
+        </div>
+
+        <span class="copyright">© 2022 Mario's Mafia - All rights reserved</span>
+    </div>
+</body>
+</html>
